@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Movimento mov1 = new Movimento();
+		
+		// método 2 mov1 = new Movimento("jair");
+		
+		mov1.getMovimento();
+
+	}
+
+}

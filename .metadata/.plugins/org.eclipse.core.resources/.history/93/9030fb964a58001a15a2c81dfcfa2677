@@ -1,0 +1,32 @@
+
+public class Movimento {
+	
+	private int eixoX;
+	private int eixoY;
+	private String nome;
+
+	public Movimento(String nome, int x, int y) {
+		
+		this.nome = nome;
+		this.eixoX = x;
+		this.eixoY = y;
+	
+	}
+	
+	public Movimento(String nome) {
+		
+		this("nome",0,0);
+		
+	}
+	
+	public Movimento() {
+		
+		this("nenhum",0,0);
+		
+	}
+	
+	public void getMovimento() {
+		System.out.print(this.nome);
+	}
+	
+}
