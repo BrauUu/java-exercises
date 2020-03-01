@@ -68,7 +68,7 @@ public class Produto {
     }
     
     public void mostrarResultado(){
-        System.out.println("\tESTOQUE E PREÇOS\n NOME: " + getNome() + "\n QTDE: " + getQtde() + "\n PREÇO DE COMPRAR: R$" + getPrecoC() + "\n PREÇO DE VENDA: R$" + getPrecoV());
+        System.out.println("\tESTOQUE E PREÇOS\nNOME: " + getNome() + "\nQTDE: " + getQtde() + "\nPREÇO DE COMPRAR: R$" + getPrecoC() + "\nPREÇO DE VENDA: R$" + getPrecoV());
     }
     
     public void orcamento() {
