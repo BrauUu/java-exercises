@@ -10,6 +10,7 @@ public class Main {
         guarana.compra(10, 5.0f);
         guarana.venda(5);
         guarana.mostrarResultado();
+        guarana.orcamento();
         
     }
     
