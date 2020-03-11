@@ -1,9 +1,13 @@
 public class Conta {
 	
 	private float saldo;
+	private String nome;
+	private int id;
 	
-	public Conta(int saldo) {
+	public Conta(float saldo, String nome, int id) {
 		this.saldo = saldo;
+		this.nome = nome;
+		this.id = id;
 	}
 	
 	public void deposito(float deposito) {
