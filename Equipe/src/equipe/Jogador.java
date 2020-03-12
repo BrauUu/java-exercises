@@ -8,7 +8,12 @@ public class Jogador {
     private int falta;
     private int gols;
     
-    public Jogador(){
+    public Jogador(float peso, String nome, String nomeT){
+        this.peso = peso;
+        this.nomeJ = nome;
+        this.nomeT = nomeT;
+        gols = 0;
+        falta = 0;
         
     }
     
