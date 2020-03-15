@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;estoque&apos; to &apos;Estoque&apos;&#x0A;- Original project: &apos;First&apos;&#x0A;- Original element: &apos;estoque&apos;&#x0A;- Renamed element: &apos;Estoque&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;estoque&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{estoque.java[estoque" matchStrategy="1" name="Estoque" qualified="false" references="true" similarDeclarations="false" stamp="1581890334367" textual="false" version="1.0"/>
-</session>
