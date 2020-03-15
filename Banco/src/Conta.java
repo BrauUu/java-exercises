@@ -1,4 +1,3 @@
-package nãosei;
 
 import java.util.Scanner;
 
@@ -15,8 +14,8 @@ public class Conta {
         numero = "0";
     } 
     
-    public void setCpmf(float cpmf){
-        this.cpmf = cpmf;
+    static void setCpmf(float juros){
+        cpmf = juros;
     }
     
     public float getCpmf(){

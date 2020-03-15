@@ -6,7 +6,7 @@ public class Quarto {
 		    String descricao;
 	private int qtdDiarias;
 	private int numQuarto;
-	private float pagamento;
+	private float pagamento = 0;
 	private float valorDiaria;
 	
 	public Quarto(float valorDiaria, String desc, int num) {
@@ -14,11 +14,10 @@ public class Quarto {
 		this.setDescricao(desc);
 		this.setStatus("Liberado");
 		this.setNumQuarto(num);
+		
 	}
 	
-	public void setStatus(String status) {
-		status.toUpperCase();
-		
+	public void setStatus(String status) {	
 		if(status == "Ocupado")
 			this.status = status;
 		else if (status == "Liberado")
@@ -35,7 +34,7 @@ public class Quarto {
 		this.descricao = desc;
 	}
 	
-	public void setQtsDiaria(int qtdD) {
+	public void setQtdDiaria(int qtdD) {
 		this.qtdDiarias = qtdD;
 	}
 	
@@ -82,7 +81,7 @@ public class Quarto {
 	public void locaQuarto(String nome, int qtdD) {
 		if (this.status == "Liberado") {
 			this.setHospede(nome);
-			this.setQtsDiaria(qtdD);
+			this.setQtdDiaria(qtdD);
 			this.setStatus("Ocupado");
 			this.setPagamento(this.qtdDiarias * this.valorDiaria);
 		}
@@ -90,8 +89,8 @@ public class Quarto {
 			System.out.println("O Quarto " + this.numQuarto + " já está Locado.");
 	}
 	
-	public void consumirItem(float item) {
-		  this.setPagamento(item);;
+	public void consumirItem(float preco) {
+		  this.setPagamento(preco);
 	}
 	
 	public void liberaQuarto() {
@@ -101,7 +100,7 @@ public class Quarto {
 	}
 	
 	public String getContaQuarto() {
-		return "----------------------------\n\tQuarto " + this.numQuarto + "\nHospede: " + this.hospede + "\nVALOR A PAGAR: " + this.pagamento;
+		return "----------------------------\n\tQuarto " + this.getNumQuarto() + "\nHospede: " + this.getHospede() + "\nVALOR A PAGAR: " + this.getPagamento();
 	}
 
 }
