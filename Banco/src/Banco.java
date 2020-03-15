@@ -1,5 +1,3 @@
-package nãosei;
-
 public class Banco {
 
 
@@ -10,8 +8,8 @@ public class Banco {
         
         conta1.deposito();
         
-        conta1.setCpmf(5);
-        conta2.setCpmf(4);
+        Conta.setCpmf(5);
+        Conta.setCpmf(4);
                 
         System.out.print(conta1.extrato());
         System.out.print(conta2.extrato());

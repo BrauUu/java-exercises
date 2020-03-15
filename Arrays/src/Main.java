@@ -18,10 +18,9 @@ public class Main {
 		
 		Conta[] contas = new Conta[10];
 		float media = 0;
-		Banco banco;
 		
 		for(int i=0;i<contas.length;i++) {
-			Conta contaTemp = new Conta(0);
+			Conta contaTemp = new Conta(0, "Usuário",i);
 			contaTemp.deposito(i * 100);
 			contas[i] = contaTemp;
 			
@@ -32,28 +31,8 @@ public class Main {
 			media += contas[i].getSaldo();	
 		}
 		
-		System.out.println("Média: " + media / contas.length);
-		
-		//------------------------------------------------------------
-			
-			int num;
-			String nome;
-			
-			System.out.println("Qual o número do Banco?");
-			num = input.nextInt();
-			
-			System.out.println("Qual o nome do Banco?");
-			nome = input.next();
-			
-			banco = new Banco(num,nome);
-			
-			for(int i=0;i<10;i++) {
-				Conta contaTemp = new Conta(100);
-				banco.adicionaConta(contaTemp);
-				System.out.println("Saldo da Conta " + banco.getSaldo(i));
-			}
-
-
+		System.out.println("Média: " + media / contas.length);			
+	
 	}
 
 }

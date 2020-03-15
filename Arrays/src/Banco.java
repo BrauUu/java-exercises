@@ -6,10 +6,10 @@ public class Banco {
 	private Conta[] contas2;
 	private int contador;
 	
-	public Banco(int num, String nome) {
+	public Banco(int num, String nome, int j) {
 		numero = num;
 		this.nome = nome;
-		contas2 = new Conta[10];
+		contas2 = new Conta[j];
 		contador = 0;
 	}
 	
