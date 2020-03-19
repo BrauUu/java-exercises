@@ -6,7 +6,7 @@ public class Quarto {
 		    String descricao;
 	private int qtdDiarias;
 	private int numQuarto;
-	private float pagamento = 0;
+	private float pagamento;
 	private float valorDiaria;
 	
 	public Quarto(float valorDiaria, String desc, int num) {
@@ -14,6 +14,7 @@ public class Quarto {
 		this.setDescricao(desc);
 		this.setStatus("Liberado");
 		this.setNumQuarto(num);
+		this.setPagamento(0);
 		
 	}
 	
@@ -100,7 +101,8 @@ public class Quarto {
 	}
 	
 	public String getContaQuarto() {
-		return "----------------------------\n\tQuarto " + this.getNumQuarto() + "\nHospede: " + this.getHospede() + "\nVALOR A PAGAR: " + this.getPagamento();
+		return "----------------------------\n\tQuarto " + this.getNumQuarto() + 
+				"\nHospede: " + this.getHospede() + "\nVALOR A PAGAR: " + this.getPagamento();
 	}
 
 }
