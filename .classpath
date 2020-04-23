@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Areios/src"/>
+	<classpathentry kind="src" path="Banco/src"/>
+	<classpathentry kind="src" path="Bar/src"/>
+	<classpathentry kind="src" path="Campeonato/src"/>
+	<classpathentry kind="src" path="Equipe/src"/>
+	<classpathentry kind="src" path="Exercicio 01/src"/>
+	<classpathentry kind="src" path="Heranca/src"/>
+	<classpathentry kind="src" path="Hospital/src"/>
+	<classpathentry kind="src" path="Hotel/src"/>
+	<classpathentry kind="src" path="Mercado/src"/>
+	<classpathentry kind="src" path="Movimento/src"/>
+	<classpathentry kind="output" path="Areios/bin"/>
+</classpath>
