@@ -34,14 +34,11 @@ public class Data {
 		this.mes = mes;
 	}
 
-	public String getData() {
-		if(dia < 10 && mes > 9)
-			return "0" + this.dia + "/" + this.mes;
-		else if(dia < 10 && mes < 10)
-			return "0" + this.dia + "/" + "0" + this.mes;
-		else if (dia > 9 && mes < 10)
-			return this.dia + "/" + "0" + this.mes;
-		else
-			return this.dia + "/" + this.mes;
+	public int getDia() {
+		return dia;
+	}
+	
+	public int getMes() {
+		return mes;
 	}
 }

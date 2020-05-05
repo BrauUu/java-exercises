@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Source</name>
+			<type>2</type>
+			<location>/home/brayan/eclipse-workspace/Source</location>
+		</link>
+	</linkedResources>
 </projectDescription>
