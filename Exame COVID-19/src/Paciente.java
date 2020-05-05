@@ -31,7 +31,7 @@ public class Paciente extends Pessoa{
 	
 	public void setGrupo(String grupo) {
 		grupo.toLowerCase();
-		if(grupo.contains("sim") || grupo.contains("pertenço")) {
+		if(grupo.contains("sim")) {
 			this.grupoDeRisco = true;
 		}
 		else if (grupo.contains("não")) {
@@ -55,7 +55,7 @@ public class Paciente extends Pessoa{
 	
 	public void setViagem(String viajou) {
 		viajou.toLowerCase();
-		if(viajou.contains("sim") || viajou.contains("viajei")) {
+		if(viajou.contains("sim")) {
 			this.viagem = true;
 		}
 		else if (viajou.contains("não")) {
@@ -72,5 +72,4 @@ public class Paciente extends Pessoa{
 	public boolean getViagem() {
 		return this.viagem;
 	}
-	
 }

@@ -36,5 +36,26 @@ public class Exame {
 		+ this.medico.getCrm() + "\n\n\t Data do Exame: " + this.dataExame.getData() + "\n\t Data de Entrega do Exame:" 
 		+ this.dataEntrega.getData();
 	}
+	
+	public void setMedico(String nome, String cpf, String crm) {
+		this.medico.setNome(nome);
+		this.medico.setCpf(cpf);
+		this.medico.setCrm(crm);
+	}
+	
+	public void setPaciente(String nome, String cpf, boolean grupo, boolean viagem) {
+		this.paciente.setNome(nome);
+		this.paciente.setCpf(cpf);
+		this.paciente.setGrupo(grupo);
+		this.paciente.setViagem(viagem);
+	}
+	
+	public void setDataExame(int dia, int mes, int diaEnt, int mesEnt) {
+		this.dataExame.setData(dia, mes);
+		if(this.paciente.getGrupo() || this.paciente.getViagem())
+			this.dataEntrega.setData(dia, mes);
+		else
+			this.dataEntrega.setData(diaEnt, mesEnt);
+	}
 
 }
