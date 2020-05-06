@@ -20,4 +20,8 @@ public class Medico extends Pessoa{
 		return this.crm;
 	}
 
+	public String toString() {
+		String resultado = super.toString();
+		return resultado += this.crm + "\n";
+	}
 }

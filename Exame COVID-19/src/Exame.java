@@ -28,6 +28,7 @@ public class Exame {
 	}
 	
 	public String getRelatorio() {
+		
 		String grupo;
 		String viagem;
 		String diaEx;
@@ -57,16 +58,16 @@ public class Exame {
 		if(this.dataEntrega.getMes() < 10) mesEnt = "0" + this.dataEntrega.getMes();
 		else mesEnt = Integer.toString(this.dataEntrega.getMes());
 		
-		String resultado =  "             EXAME - COVID-19\n\n \t\t Paciente\n\t Nome: " + this.paciente.getNome() 
-		+ "\n\t CPF: " + this.paciente.getCpf() 
-		+ "\n\t Pertence ao grupo de risco: " + grupo
-		+ "\n\t Viajou recentemente: " + viagem 
-		+ "\n\n \t\t Medico\n\t Nome: " + this.medico.getNome() + "\n\t CPF: " 
-		+ this.medico.getCpf() + "\n\t CRM: " + this.medico.getCrm() 
-		+ "\n\n\t Data do Exame: " + diaEx + "/" 
-		+ mesEx +  "\n\t Data de Entrega do Exame:" 
-		+ diaEnt + "/" + mesEnt;
-		return resultado;
+		return "             EXAME - COVID-19\n\n \t\t Paciente\n\t Nome: " + this.paciente.getNome() 
+			+ "\n\t CPF: " + this.paciente.getCpf() 
+			+ "\n\t Pertence ao grupo de risco: " + grupo
+			+ "\n\t Viajou recentemente: " + viagem 
+			+ "\n\n \t\t Medico\n\t Nome: " + this.medico.getNome() + 
+			"\n\t CPF: " + this.medico.getCpf() + 
+			"\n\t CRM: " + this.medico.getCrm() 
+			+ "\n\n\t Data do Exame: " + diaEx + "/" + mesEx +  
+			"\n\t Data de Entrega do Exame:" + diaEnt + "/" + mesEnt;
+		
 	}
 	
 	public void setMedico(String nome, String cpf, String crm) {
@@ -90,6 +91,13 @@ public class Exame {
 	
 	public void setDataEntrega(int dia, int mes) {
 		this.dataEntrega.setData(dia, mes);
+	}
+	
+	public String toString() {
+		String resultado = this.dataEntrega.toString();
+		resultado += this.dataExame.toString();
+		resultado += this.paciente.toString();
+		return resultado += this.medico.toString();
 	}
 
 }

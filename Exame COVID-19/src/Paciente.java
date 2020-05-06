@@ -36,4 +36,9 @@ public class Paciente extends Pessoa{
 	public boolean getViagem() {
 		return this.viagem;
 	}
+	
+	public String toString() {
+		String resultado = super.toString();
+		return resultado += this.grupoDeRisco + "\n" + this.viagem + "\n";
+	}
 }

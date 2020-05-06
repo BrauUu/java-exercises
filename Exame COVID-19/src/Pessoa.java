@@ -28,4 +28,8 @@ public class Pessoa {
 	public String getCpf() {
 		return cpf;
 	}
+	
+	public String toString() {
+		return this.nome + "\n" + this.cpf + "\n"; 
+	}
 }
