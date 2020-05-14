@@ -1,4 +1,4 @@
-public class Pessoa {
+ public class Pessoa {
 
 	private String nome;
 	private String cpf;
@@ -16,6 +16,7 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
 	
 	public String getNome() {
 		return nome;
