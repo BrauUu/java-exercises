@@ -1,10 +1,11 @@
 
-public class Circulo {
+public class Circulo extends Figura{
 	
 	private Ponto meio;
 	private double raio;
 	
 	public Circulo(double raio) {
+		super();
 		meio = new Ponto();
 		this.raio = raio;
 	}
@@ -23,6 +24,10 @@ public class Circulo {
 	
 	public String getMeio() {
 		return "(" + meio.x + "," + meio.y + ")";
+	}
+	
+	public void calculaArea() {
+		this.area = Math.PI *  Math.pow(raio, 2);
 	}
 
 }
