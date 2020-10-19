@@ -21,20 +21,21 @@ public class Main {
 		lo.imprimirLista();
 		System.out.println(lo.isMember(7));*/
 		
-		ListaDuplamenteEncadeada lde = new ListaDuplamenteEncadeada();
+		/*ListaDuplamenteEncadeada lde = new ListaDuplamenteEncadeada();
 		
-		lde.insereOrdenado(3);
-		lde.insereOrdenado(4);
-		lde.insereOrdenado(2);
-		lde.insereOrdenado(7);
-		lde.insereOrdenado(1);
-		lde.insereOrdenado(7);
-		lde.insereOrdenado(-3);
-		lde.insereOrdenado(5);
+		lde.insereInicio(20);
+		lde.insereInicio(15);
+		lde.insereInicio(12);
+		lde.insereInicio(8);
+		lde.insereInicio(10);
 		
 		lde.imprimeInicio();
 		lde.imprimeFim();
 		
+		lde.removePenultimo();
+		
+		lde.imprimeInicio();
+		lde.imprimeFim();*/
 		
 		/*lde.insereInicio(5);
 		lde.insereInicio(10);
@@ -51,23 +52,23 @@ public class Main {
 		lde.imprimeInicio();
 		lde.imprimeFim();*/
 		
-		/*ListaCircular lc = new ListaCircular();
+		ListaCircular lc = new ListaCircular();
 		
-		lc.insereFim(4);
-		lc.insereFim(6);
-		lc.insereInicio(5);
+		lc.insereInicio(30);
+		lc.insereInicio(28);
+		lc.insereInicio(25);
+		lc.insereInicio(20);
+		lc.insereInicio(12);
+		lc.insereInicio(10);
+		
+		
 		lc.imprimeInicio();
 		lc.imprimeFim();
 		
-		System.out.println(lc.removeInicio());
+		lc.insereInicio(8);
 		
 		lc.imprimeInicio();
 		lc.imprimeFim();
-		
-		System.out.println(lc.removeFim());
-		
-		lc.imprimeInicio();
-		lc.imprimeFim();*/
 
 	}
 

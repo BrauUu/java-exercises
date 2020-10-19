@@ -72,9 +72,7 @@ public class ListaCircular {
 		}
 		else while (corrente != null) {             
 			System.out.print(corrente.valor + " , ");   
-			if(corrente == cauda) {
-				break;
-			}
+			
 			corrente = corrente.proximo;
 		}
 		System.out.print("\n");

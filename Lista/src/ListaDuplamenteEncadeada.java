@@ -95,7 +95,8 @@ public class ListaDuplamenteEncadeada{
 		if(corrente == null) {
 			System.out.println("Lista Vazia");
 		}
-		else while (corrente != null) {             
+		else while (corrente != null) {     
+			if(corrente.proximo == cabeca) break;
 			System.out.print(corrente.valor + " , ");            
 			corrente = corrente.proximo;         
 		}
@@ -107,6 +108,7 @@ public class ListaDuplamenteEncadeada{
 		if(corrente == null) {
 			System.out.println("Lista Vazia");
 		}else while (corrente != null) {
+			if( corrente.anterior == cauda) break;
 			System.out.print(corrente.valor + " , ");
 			corrente = corrente.anterior;
 		}
