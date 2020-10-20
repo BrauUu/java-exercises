@@ -14,7 +14,6 @@ public class Node {
 	}
 	
 	public void insertNode() {
-		
 		if(!(this.content.contains("?"))) {
 			System.out.println("Impossível Adicionar Frase - Este Fluxo Já Possue Uma Resposta");
 			return;
@@ -26,7 +25,7 @@ public class Node {
 		if((option.toLowerCase().contains("n"))) {
 			if(this.rightNode == null) {
 				this.rightNode = new Node(this.addContent());
-				System.out.println("Adicionado como resposta: " + this.rightNode.content);
+				System.out.println("Adicionado como frase: " + this.rightNode.content);
 			}
 			else 
 				this.rightNode.insertNode();
@@ -35,7 +34,7 @@ public class Node {
 			if(this.leftNode == null) {
 				this.leftNode = new Node(this.addContent());
 					
-				System.out.println("Adicionado como resposta: " + this.leftNode.content);
+				System.out.println("Adicionado como frase: " + this.leftNode.content);
 			}
 			else 
 				this.leftNode.insertNode();

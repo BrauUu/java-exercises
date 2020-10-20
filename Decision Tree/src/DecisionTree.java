@@ -14,8 +14,8 @@ public class DecisionTree {
 		System.out.println("CONSTRUÇÃO DE ÁRVORE");
 		if(root == null) {
 			System.out.println("Qual frase deseja adicionar?");
-			String question = scan.nextLine();
-			this.root = new Node(question);
+			String content = scan.nextLine();
+			this.root = new Node(content);
 		}
 		else {
 			this.root.insertNode();
